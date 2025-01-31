@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>ポートフォリオサンプル</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>小笠原 慎治 Web Portfolio</h1>
+    <p>イラスト×Webデザインを紹介します</p>
+  </header>
+
+  <!-- メインビジュアル --> 
+  <section class="main">
+    <img src="img/001.png" alt="メインビジュアル">
+    <div class="main-text">
+      <h2>Welcome to My Creative World</h2>
+      <button id="showGalleryBtn">ギャラリーを見る</button>
+    </div>
+  </section>
+
+  <!-- スキル紹介 -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>Photoshop / Illustrator</li>
+      <li>Word / Excel / PowerPoint</li>
+    </ul>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="img/002.png" alt="イラストサンプル1">
+        <p>イラストサンプル1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="img/003.png" alt="イラストサンプル2">
+        <p>イラストサンプル2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="img/004.png" alt="イラストサンプル3">
+        <p>イラストサンプル3</p>
+      </div>
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="caption"></div>
+</div>
+    </div>
+  </section>
+
+ <section class="contact" id="contact">
+    <h2>お問い合わせ</h2>
+    <form>
+      <label for="name">お名前</label>
+      <input type="text" id="name" placeholder="例：山田太郎" />
+      
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" placeholder="example@mail.com" />
+      
+      <label for="message">メッセージ</label>
+      <textarea id="message" rows="5"></textarea>
+      
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Shinji Ogasawara Web Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
